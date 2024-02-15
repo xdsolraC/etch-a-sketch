@@ -7,3 +7,4 @@ const resizeBtn = document.querySelector(".resizeBtn");
 const clearBtn = document.querySelector(".clearBtn");
 const colorPicker = document.querySelector(".color-picker");
 const randomBtn = document.querySelector("#random");
+let sketchPx = 400;
