@@ -92,3 +92,8 @@ colorPicker.addEventListener("input", () => {
         button.style.backgroundColor = colorPicker.value;
     })
 });
+
+// Random color click event listener
+randomBtn.addEventListener("click", () => {
+    randomBtnValue = randomBtn.checked;
+})
