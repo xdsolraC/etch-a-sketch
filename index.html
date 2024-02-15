@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="appContainer">
+        <h1>Etch-A-Sketch</h1>
+        <p>Grid-size: <span class="grid-size">16</span></p>
+        
+        <div class="sketch"></div>
+        
+        <div class="inputArea">
+            <button class="resizeBtn button">Resize</button>
+            <button class="clearBtn button">Clear</button>
+            <label for="color-picker">Color:
+                <input type="color" id="color-picker" value="ffffff" class="color-picker">
+            </label>
+            <label for="random">Random-color: 
+                <input type="checkbox" id="random">
+            </label>
+        </div>
+
+        <footer>
+            by
+            <a href="https://github.com/xdsolraC" target="_blank">xdsolraC</a>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
     
