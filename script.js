@@ -36,3 +36,11 @@ function createGrid(gridSize) {
         sketch.appendChild(square);
     }
 }
+
+// Function to remove the current grid when a new grid is created
+function removeGrid() {
+    const squares = document.querySelectorAll(".grid-square");
+    squares.forEach((square) => {
+        square.remove();
+    })
+}
