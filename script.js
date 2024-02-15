@@ -44,3 +44,18 @@ function removeGrid() {
         square.remove();
     })
 }
+
+/* EVENT LISTENERS */
+
+// Immediately create the default grid and assign default colors when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+    // Create default grid:
+    createGrid(gridSizeValue);
+
+    // Assign default color to various elements:
+    h1.style.backgroundColor = colorPicker.value;
+    randomBtn.style.accentColor = colorPicker.value;
+    buttons.forEach((button) => {
+        button.style.backgroundColor = colorPicker.value;
+    })
+})
