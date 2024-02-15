@@ -79,3 +79,16 @@ clearBtn.addEventListener("click", () => {
         square.style.backgroundColor = "transparent";
     })
 })
+
+// Color picker input event listener
+colorPicker.addEventListener("input", () => {
+    colorValue = colorPicker.value;
+
+    // Assign current color value to various elements:
+    h1.style.backgroundColor = colorPicker.value;
+    randomBtn.style.accentColor = colorPicker.value;
+
+    buttons.forEach((button) => {
+        button.style.backgroundColor = colorPicker.value;
+    })
+});
