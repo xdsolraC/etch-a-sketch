@@ -71,3 +71,11 @@ resizeBtn.addEventListener("click", () => {
         alert("Please enter a number between 1 and 100");
     }
 })
+
+// Clear grid click event listener
+clearBtn.addEventListener("click", () => {
+    const squares = document.querySelectorAll(".grid-square");
+    squares.forEach((square) => {
+        square.style.backgroundColor = "transparent";
+    })
+})
