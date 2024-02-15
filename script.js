@@ -59,3 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
         button.style.backgroundColor = colorPicker.value;
     })
 })
+
+// Resize click event listener
+resizeBtn.addEventListener("click", () => {
+    gridSizeValue = parseInt(prompt("Enter new grid size: (e.g. 64 = 64 x 64)"));
+    if (gridSizeValue > 0 && gridSizeValue <= 100) {
+        gridSizeElem.textContent = gridSizeValue;
+        removeGrid();
+        createGrid(gridSizeValue);
+    } else {
+        alert("Please enter a number between 1 and 100");
+    }
+})
